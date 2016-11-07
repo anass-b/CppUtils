@@ -1,0 +1,2 @@
+git@bitbucket.org:anassb/cpputils.git
+git@github.com:anass-b/CppUtils.git
