@@ -10,14 +10,14 @@ namespace utils {
 class uuid
 {
 public:
-    std::string uuid_to_bytes(boost::uuids::uuid u)
+    static std::string uuid_to_bytes(boost::uuids::uuid u)
     {
         std::string str(16, 0);
         std::copy(u.begin(), u.end(), str.begin());
         return str;
     }
 
-    boost::uuids::uuid bytes_to_uuid(std::string bytes)
+    static boost::uuids::uuid bytes_to_uuid(std::string bytes)
     {
         if (bytes.size() != 16) throw std::exception();
 
